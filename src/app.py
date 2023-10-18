@@ -7,7 +7,7 @@ import plotly.express as px
 import pandas as pd
 import pathlib   
 
-token = open(".env").read()
+# token = open(".env").read()
 # print(token)
 
 
