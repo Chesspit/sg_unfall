@@ -9,8 +9,8 @@ import pathlib
 # Da die App via RENDER deployed wird, erfolgt der Zugriff auf den Token via .yaml-File
 # mapbox_token = open(".env").read()
 # print(token)
-# import os
-# mapbox_token = os.environ.get('mapbox_token')
+import os
+mapbox_token = os.environ.get('mapbox_token')
 
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
