@@ -9,8 +9,8 @@ import pathlib
 # Da die App via RENDER deployed wird, erfolgt der Zugriff auf den Token via .yaml-File
 # mapbox_token = open(".env").read()
 # print(token)
-import os
-mapbox_token = os.environ.get('mapbox_token')
+# import os
+# mapbox_token = os.environ.get('mapbox_token')
 
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
@@ -265,9 +265,12 @@ def fig_update(checklist_typ, checklist_schwere, checklist_beteiligte, checklist
                                     hover_data={'Längengrad':False, 'Breitengrad':False, 'Unfallschwere':False, 
                                                 'Unfalltyp': True, 'Jahr': True, 'Monat': True, 'Wochentag': True, 'Stunde': True
                                     })                     
-    fig.update_layout(mapbox_style="streets", mapbox_accesstoken = mapbox_token,
-                            legend = dict(bgcolor = '#F5F5F5', title_text='Schwere der Verletzung', x=0.02, y=1.02, orientation="h", yanchor='bottom'),
-                            )    
+    # fig.update_layout(mapbox_style="streets", mapbox_accesstoken = mapbox_token,
+    #                         legend = dict(bgcolor = '#F5F5F5', title_text='Schwere der Verletzung', x=0.02, y=1.02, orientation="h", yanchor='bottom'),
+    #                         ) 
+    fig.update_layout(mapbox_style="carto-positron",
+                        legend = dict(bgcolor = '#F5F5F5', title_text='Schwere der Verletzung', x=0.02, y=1.02, orientation="h", yanchor='bottom'),
+                        )       
     return fig
 
 
