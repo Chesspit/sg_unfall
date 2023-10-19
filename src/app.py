@@ -263,9 +263,12 @@ def fig_update(checklist_typ, checklist_schwere, checklist_beteiligte, checklist
                                     hover_data={'Längengrad':False, 'Breitengrad':False, 'Unfallschwere':False, 
                                                 'Unfalltyp': True, 'Jahr': True, 'Monat': True, 'Wochentag': True, 'Stunde': True
                                     })
-    fig.update_layout(mapbox_style="streets", mapbox_accesstoken=token,
+    # fig.update_layout(mapbox_style="streets", mapbox_accesstoken=token,
+    #                         legend = dict(bgcolor = '#F5F5F5', title_text='Schwere der Verletzung', x=0.02, y=1.02, orientation="h", yanchor='bottom'),
+    #                         )
+    fig.update_layout(mapbox_style="streets", mapbox_accesstoken,
                             legend = dict(bgcolor = '#F5F5F5', title_text='Schwere der Verletzung', x=0.02, y=1.02, orientation="h", yanchor='bottom'),
-                            )
+                            )    
     return fig
 
 
