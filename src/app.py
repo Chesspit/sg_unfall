@@ -2,17 +2,11 @@ import dash
 from dash import dash_table
 import dash_bootstrap_components as dbc
 from dash import Dash, dcc, html, Input, Output
-import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
 import pathlib   
 
-<<<<<<< HEAD
 # Da die App via RENDER deployed wird, erfolgt der Zugriff auf den Token via .yaml-File
-=======
-import os
-os.environ.get('token')
->>>>>>> 926e38adb1245c2d6379a4e8436929feb9d0aa9c
 # token = open(".env").read()
 # print(token)
 
