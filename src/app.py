@@ -7,7 +7,12 @@ import plotly.express as px
 import pandas as pd
 import pathlib   
 
+<<<<<<< HEAD
 # Da die App via RENDER deployed wird, erfolgt der Zugriff auf den Token via .yaml-File
+=======
+import os
+os.environ.get('token')
+>>>>>>> 926e38adb1245c2d6379a4e8436929feb9d0aa9c
 # token = open(".env").read()
 # print(token)
 
