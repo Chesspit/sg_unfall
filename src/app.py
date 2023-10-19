@@ -264,7 +264,7 @@ def fig_update(checklist_typ, checklist_schwere, checklist_beteiligte, checklist
                                     opacity=0.99, zoom=12, width=1200, height=700,
                                     hover_data={'Längengrad':False, 'Breitengrad':False, 'Unfallschwere':False, 
                                                 'Unfalltyp': True, 'Jahr': True, 'Monat': True, 'Wochentag': True, 'Stunde': True
-                                    })                     )
+                                    })                     
     fig.update_layout(mapbox_style="streets", mapbox_accesstoken = mapbox_token,
                             legend = dict(bgcolor = '#F5F5F5', title_text='Schwere der Verletzung', x=0.02, y=1.02, orientation="h", yanchor='bottom'),
                             )    
