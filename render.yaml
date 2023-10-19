@@ -2,6 +2,7 @@ services:
   # See https://render.com/docs/blueprint-spec for more info on render blueprints
   - type: web
     name: unfallorte
+    region: frankfurt
     env: python
     plan: free
     # A requirements.txt file must exist
@@ -11,3 +12,5 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.10.0
+      - key: token
+        value: pk.eyJ1IjoicGV0ZXJrbGluZ3MiLCJhIjoiY2xrdjFibWQ5MDRwazNwbXpzZ25lMjExaCJ9.GMu5L5oiUNC4ddMHjS_NjQ
