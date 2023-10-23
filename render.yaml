@@ -2,7 +2,7 @@ services:
   # See https://render.com/docs/blueprint-spec for more info on render blueprints
   - type: web
     name: unfallorte
-    region: frankfurt
+    region: oregon
     env: python
     plan: free
     # A requirements.txt file must exist
