@@ -15,7 +15,7 @@ Written on top of Flask, Plotly.js, and React.js, Dash is ideal for building dat
 
 ---
 
-### Datensatz: Belegung neu erstellter Wohnungen
+### Datensatz: Strassenverkehrsunfallorte
 [Datenquelle](https://daten.sg.ch/explore/embed/dataset/strassenverkehrsunfallorte/table/?disjunctive.accidenttype_de&disjunctive.accidentseveritycategory_de&disjunctive.roadtype_de&disjunctive.cantoncode&disjunctive.municipalitycode&disjunctive.gem_name&disjunctive.accidentyear&disjunctive.accidentmonth_de&disjunctive.accidentweekday_de&disjunctive.accidenthour)
 
 
